@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const EssentialDetail = () => {
   return (
@@ -244,26 +245,7 @@ const EssentialDetail = () => {
 
 
       {/* ================= FOOTER ================= */}
-      <footer className="border-t border-gray-100 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-
-          <div className="flex flex-col sm:flex-row justify-between gap-5">
-
-            <div>
-              <p className="font-black">Jagdish Care</p>
-              <p className="text-xs text-gray-500 mt-1">
-                Complete home maintenance, made simple.
-              </p>
-            </div>
-
-            <p className="text-xs text-gray-400 sm:self-end">
-              © {new Date().getFullYear()} Jagdish Care. All rights reserved.
-            </p>
-
-          </div>
-
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );

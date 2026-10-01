@@ -1,39 +1,13 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const PremiumDetail = () => {
   return (
     <div className="min-h-screen bg-white text-brand-dark">
 
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-16 sm:h-20 flex items-center justify-between">
-
-            <a href="/" className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-xl bg-orange-50 text-brand-orange flex items-center justify-center font-black">
-                JC
-              </div>
-
-              <div>
-                <p className="font-black text-base sm:text-lg leading-none">
-                  Jagdish Care
-                </p>
-                <p className="text-[9px] sm:text-[10px] text-gray-500 mt-1">
-                  Complete Home Care
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="/"
-              className="text-xs sm:text-sm font-bold text-gray-600 hover:text-brand-orange transition"
-            >
-              ← Back to Plans
-            </a>
-
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
 
       {/* HERO */}
@@ -313,26 +287,7 @@ const PremiumDetail = () => {
 
 
       {/* FOOTER */}
-      <footer className="border-t border-gray-100 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-
-          <div className="flex flex-col sm:flex-row justify-between gap-5">
-
-            <div>
-              <p className="font-black">Jagdish Care</p>
-              <p className="text-xs text-gray-500 mt-1">
-                Complete home maintenance, made simple.
-              </p>
-            </div>
-
-            <p className="text-xs text-gray-400 sm:self-end">
-              © {new Date().getFullYear()} Jagdish Care. All rights reserved.
-            </p>
-
-          </div>
-
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );
