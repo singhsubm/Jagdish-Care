@@ -40,10 +40,10 @@ const HowItWorksSection = () => {
           </p>
 
           {/* 4 STEPS GRID (All 4 cards in one row on desktop) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             
             {/* STEP 1 */}
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-3.5 shadow-sm border border-[#F3EFEA] flex flex-col justify-between">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-3 sm:p-3.5 shadow-sm border border-[#F3EFEA] flex flex-col justify-between min-h-[175px] sm:min-h-0">
               <div>
                 <span className="text-[10px] font-bold text-[#F25A2B] bg-[#FFF2EC] px-2 py-0.5 rounded-md inline-block mb-2">
                   01
@@ -75,7 +75,7 @@ const HowItWorksSection = () => {
             </div>
 
             {/* STEP 2 */}
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-3.5 shadow-sm border border-[#F3EFEA] flex flex-col justify-between">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-3 sm:p-3.5 shadow-sm border border-[#F3EFEA] flex flex-col justify-between min-h-[175px] sm:min-h-0">
               <div>
                 <span className="text-[10px] font-bold text-[#F25A2B] bg-[#FFF2EC] px-2 py-0.5 rounded-md inline-block mb-2">
                   02
@@ -112,7 +112,7 @@ const HowItWorksSection = () => {
             </div>
 
             {/* STEP 3 */}
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-3.5 shadow-sm border border-[#F3EFEA] flex flex-col justify-between">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-3 sm:p-3.5 shadow-sm border border-[#F3EFEA] flex flex-col justify-between min-h-[175px] sm:min-h-0">
               <div>
                 <span className="text-[10px] font-bold text-[#F25A2B] bg-[#FFF2EC] px-2 py-0.5 rounded-md inline-block mb-2">
                   03
@@ -141,7 +141,7 @@ const HowItWorksSection = () => {
             </div>
 
             {/* STEP 4 */}
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-3.5 shadow-sm border border-[#F3EFEA] flex flex-col justify-between">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-3 sm:p-3.5 shadow-sm border border-[#F3EFEA] flex flex-col justify-between min-h-[175px] sm:min-h-0">
               <div>
                 <span className="text-[10px] font-bold text-[#F25A2B] bg-[#FFF2EC] px-2 py-0.5 rounded-md inline-block mb-2">
                   04
