@@ -201,7 +201,7 @@ const AboutUs = () => {
                       h-full
                       object-cover
                       object-center
-                      sm:object-right
+                      object-right
                     "
                   />
 

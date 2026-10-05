@@ -242,6 +242,8 @@ const ContactUs = () => {
 
               <div
                 className="
+                hidden
+                lg:block
                   relative
                   w-full
                   min-h-[280px]
@@ -330,9 +332,9 @@ const ContactUs = () => {
             <ContactInfoCard
               icon="phone"
               title="Call Us"
-              value="+91 94157 26896"
+              value="+91 94157 26796"
               subtitle="Mon - Sun, 8:00 AM - 8:00 PM"
-              href="tel:+919415726896"
+              href="tel:+919415726796"
             />
 
             <ContactInfoCard
@@ -348,7 +350,7 @@ const ContactUs = () => {
               title="Chat on WhatsApp"
               value="Quick response"
               subtitle="Talk to our support team"
-              href="https://wa.me/919415726896"
+              href="https://wa.me/919415726796"
               whatsapp
             />
 

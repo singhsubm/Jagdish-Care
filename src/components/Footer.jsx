@@ -76,27 +76,28 @@ const Footer = () => {
               <div className="flex items-center gap-2.5 mt-6">
 
                 <SocialIcon
-                  href="https://wa.me/91XXXXXXXXXX"
+                  href="https://wa.me/+919415726796"
+                  message="Hello, I would like to inquire about your services."
                   type="whatsapp"
                 />
 
                 <SocialIcon
-                  href="#"
+                  href="/contact"
                   type="instagram"
                 />
 
                 <SocialIcon
-                  href="#"
+                  href="/contact"
                   type="facebook"
                 />
 
                 <SocialIcon
-                  href="#"
+                  href="/contact"
                   type="youtube"
                 />
 
                 <SocialIcon
-                  href="#"
+                  href="/contact"
                   type="linkedin"
                 />
 
@@ -118,9 +119,9 @@ const Footer = () => {
               <FooterLinks
                 links={[
                   ["Home", "/"],
-                  ["Our Services", "/services"],
-                  ["Home Care Plans", "/#care-plans"],
-                  ["How It Works", "/#how-it-works"],
+                  ["Our Services", "/home-care-plans"],
+                  ["Home Care Plans", "/home-care-plans"],
+                  ["How It Works", "/"],
                   ["About Us", "/about"],
                   ["Contact", "/contact"],
                 ]}
@@ -141,17 +142,15 @@ const Footer = () => {
 
               <FooterLinks
                 links={[
-                  ["Deep Cleaning", "/services/deep-cleaning"],
-                  ["Pest Control", "/services/pest-control"],
-                  ["Electrical Services", "/services/electrical"],
-                  ["Plumbing Services", "/services/plumbing"],
-                  ["AC Service", "/services/ac"],
-                  ["Home Appliance Repair", "/services/appliance-repair"],
-                  ["Geyser Service", "/services/geyser"],
-                  ["Carpentry Services", "/services/carpentry"],
-                  ["Painting Services", "/services/painting"],
-                  ["Civil & Renovation", "/services/civil-renovation"],
-                  ["More Services", "/services"],
+                  ["Deep Cleaning", "/home-care-plans"],
+                  ["Pest Control", "/home-care-plans"],
+                  ["Electrical Services", "/home-care-plans"],
+                  ["Plumbing Services", "/home-care-plans"],
+                  ["AC Service", "/home-care-plans"],
+                  ["Home Appliance Repair", "/home-care-plans"],
+                  ["Geyser Service", "/home-care-plans"],
+                  ["Carpentry Services", "/home-care-plans"],
+                  ["More Services", "/home-care-plans"],
                 ]}
               />
 
@@ -178,7 +177,7 @@ const Footer = () => {
 
               <ContactItem
                 icon="phone"
-                title="+91 94157 26896"
+                title="+91 94157 26796"
                 subtitle="Mon - Sun, 8:00 AM - 8:00 PM"
               />
 
@@ -194,7 +193,8 @@ const Footer = () => {
                 icon="whatsapp"
                 title="Chat on WhatsApp"
                 subtitle="Quick response"
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/+919415726796"
+                message="Hello, I would like to inquire about your services."
               />
 
             </div>
@@ -219,9 +219,9 @@ const Footer = () => {
               <FooterLinks
                 links={[
                   ["Home", "/"],
-                  ["Our Services", "/services"],
-                  ["Home Care Plans", "/#care-plans"],
-                  ["How It Works", "/#how-it-works"],
+                  ["Our Services", "/home-care-plans"],
+                  ["Home Care Plans", "/home-care-plans"],
+                  ["How It Works", "/"],
                   ["About Us", "/about"],
                   ["Contact", "/contact"],
                 ]}
@@ -241,17 +241,15 @@ const Footer = () => {
               <div className="grid grid-cols-2 gap-x-6 gap-y-3">
 
                 {[
-                  ["Deep Cleaning", "/services/deep-cleaning"],
-                  ["Pest Control", "/services/pest-control"],
-                  ["Electrical Services", "/services/electrical"],
-                  ["Plumbing Services", "/services/plumbing"],
-                  ["AC Service", "/services/ac"],
-                  ["Home Appliance Repair", "/services/appliance-repair"],
-                  ["Geyser Service", "/services/geyser"],
-                  ["Carpentry Services", "/services/carpentry"],
-                  ["Painting Services", "/services/painting"],
-                  ["Civil & Renovation", "/services/civil-renovation"],
-                  ["More Services", "/services"],
+                  ["Deep Cleaning", "/home-care-plans"],
+                  ["Pest Control", "/home-care-plans"],
+                  ["Electrical Services", "/home-care-plans"],
+                  ["Plumbing Services", "/home-care-plans"],
+                  ["AC Service", "/home-care-plans"],
+                  ["Home Appliance Repair", "/home-care-plans"],
+                  ["Geyser Service", "/home-care-plans"],
+                  ["Carpentry Services", "/home-care-plans"],
+                  ["More Services", "/home-care-plans"],
                 ].map(([label, href]) => (
 
                   <a
