@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-white text-brand-dark">
+    <div className="min-h-screen bg-white text-brand-dark overflow-x-hidden">
       <Navbar />
 
       <main>
@@ -16,8 +16,8 @@ const AboutUs = () => {
         <section className="relative overflow-hidden bg-[#f8f9fa]">
 
           {/* Decorative shapes */}
-          <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-orange-100/60 blur-3xl" />
-          <div className="absolute bottom-0 -left-24 w-72 h-72 rounded-full bg-blue-100/50 blur-3xl" />
+          <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-orange-100/60 blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 -left-24 w-72 h-72 rounded-full bg-blue-100/50 blur-3xl pointer-events-none" />
 
           <div
             className="
@@ -27,8 +27,8 @@ const AboutUs = () => {
               px-5
               sm:px-8
               lg:px-10
-              py-16
-              sm:py-20
+              py-12
+              sm:py-16
               lg:py-24
             "
           >
@@ -45,8 +45,7 @@ const AboutUs = () => {
             >
 
               {/* LEFT */}
-
-              <div>
+              <div className="relative z-10">
 
                 <div
                   className="
@@ -59,10 +58,10 @@ const AboutUs = () => {
                     bg-orange-50
                     border
                     border-orange-100
-                    mb-5
+                    mb-4
+                    sm:mb-5
                   "
                 >
-
                   <span className="w-2 h-2 rounded-full bg-brand-orange" />
 
                   <span
@@ -77,22 +76,22 @@ const AboutUs = () => {
                   >
                     About Jagdish Care
                   </span>
-
                 </div>
 
 
                 <h1
                   className="
-                    text-4xl
+                    text-[2.5rem]
+                    leading-[1.05]
                     sm:text-5xl
                     lg:text-6xl
                     font-black
-                    leading-[1.02]
                     tracking-[-0.04em]
                     text-brand-dark
                   "
                 >
                   Home Care,
+
                   <br />
 
                   <span className="text-brand-orange">
@@ -103,12 +102,14 @@ const AboutUs = () => {
 
                 <p
                   className="
-                    mt-6
+                    mt-5
+                    sm:mt-6
                     max-w-xl
                     text-sm
                     sm:text-base
                     lg:text-lg
-                    leading-7
+                    leading-6
+                    sm:leading-7
                     text-gray-600
                   "
                 >
@@ -133,8 +134,16 @@ const AboutUs = () => {
 
 
                 {/* CTA */}
-
-                <div className="flex flex-col sm:flex-row gap-3 mt-8">
+                <div
+                  className="
+                    flex
+                    flex-col
+                    sm:flex-row
+                    gap-3
+                    mt-7
+                    sm:mt-8
+                  "
+                >
 
                   <a
                     href="/home-care-plans"
@@ -155,14 +164,13 @@ const AboutUs = () => {
                       hover:bg-orange-600
                       hover:-translate-y-0.5
                       transition-all
+                      w-full
+                      sm:w-auto
                     "
                   >
                     Explore Our Services
                     <span>→</span>
                   </a>
-
-
-                  
 
                 </div>
 
@@ -170,14 +178,14 @@ const AboutUs = () => {
 
 
               {/* RIGHT IMAGE */}
-
-              <div className="relative">
+              <div className="relative mt-2 sm:mt-4 lg:mt-0">
 
                 <div
                   className="
                     relative
                     overflow-hidden
-                    rounded-[28px]
+                    rounded-[22px]
+                    sm:rounded-[28px]
                     aspect-[4/3]
                     bg-gray-100
                     shadow-2xl
@@ -192,12 +200,12 @@ const AboutUs = () => {
                       w-full
                       h-full
                       object-cover
-                        object-right
+                      object-center
+                      sm:object-right
                     "
                   />
 
                   {/* White overlay */}
-
                   <div
                     className="
                       absolute
@@ -213,36 +221,43 @@ const AboutUs = () => {
 
 
                 {/* Floating card */}
-
                 <div
                   className="
                     absolute
-                    -bottom-5
-                    left-4
+                    -bottom-4
+                    sm:-bottom-5
+                    left-3
                     sm:left-8
                     bg-white
                     rounded-2xl
                     shadow-xl
                     border
                     border-gray-100
-                    px-5
-                    py-4
-                    max-w-[250px]
+                    px-3
+                    sm:px-5
+                    py-3
+                    sm:py-4
+                    max-w-[230px]
+                    sm:max-w-[250px]
                   "
                 >
 
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2.5 sm:gap-3">
 
                     <div
                       className="
-                        w-11
-                        h-11
+                        w-10
+                        h-10
+                        sm:w-11
+                        sm:h-11
                         rounded-xl
                         bg-orange-50
                         flex
                         items-center
                         justify-center
-                        text-xl
+                        text-lg
+                        sm:text-xl
+                        shrink-0
                       "
                     >
                       🏠
@@ -250,11 +265,11 @@ const AboutUs = () => {
 
                     <div>
 
-                      <p className="text-sm font-bold text-brand-dark">
+                      <p className="text-xs sm:text-sm font-bold text-brand-dark">
                         Home Care Made Simple
                       </p>
 
-                      <p className="text-[11px] text-gray-500 mt-0.5">
+                      <p className="text-[10px] sm:text-[11px] text-gray-500 mt-0.5">
                         Repairs • Maintenance • Cleaning
                       </p>
 
@@ -286,7 +301,8 @@ const AboutUs = () => {
               px-5
               sm:px-8
               lg:px-10
-              py-20
+              py-16
+              sm:py-20
               lg:py-24
             "
           >
@@ -296,28 +312,32 @@ const AboutUs = () => {
                 grid
                 grid-cols-1
                 lg:grid-cols-[0.9fr_1.1fr]
-                gap-12
+                gap-10
+                sm:gap-12
                 lg:gap-20
                 items-center
               "
             >
 
               {/* IMAGE */}
-
               <div
                 className="
                   relative
                   order-2
                   lg:order-1
+                  px-1
+                  sm:px-0
                 "
               >
 
                 <div
                   className="
                     overflow-hidden
-                    rounded-[28px]
+                    rounded-[22px]
+                    sm:rounded-[28px]
                     aspect-[4/3]
                     bg-gray-100
+                    shadow-sm
                   "
                 >
 
@@ -335,14 +355,17 @@ const AboutUs = () => {
 
 
                 {/* Decorative border */}
-
                 <div
                   className="
                     absolute
-                    -bottom-4
-                    -right-4
-                    w-32
-                    h-32
+                    -bottom-3
+                    sm:-bottom-4
+                    -right-2
+                    sm:-right-4
+                    w-24
+                    sm:w-32
+                    h-24
+                    sm:h-32
                     rounded-3xl
                     border-2
                     border-orange-200
@@ -354,7 +377,6 @@ const AboutUs = () => {
 
 
               {/* CONTENT */}
-
               <div className="order-1 lg:order-2">
 
                 <SectionLabel>
@@ -374,6 +396,7 @@ const AboutUs = () => {
                   "
                 >
                   Built Around
+
                   <br />
 
                   <span className="text-brand-orange">
@@ -384,11 +407,13 @@ const AboutUs = () => {
 
                 <div
                   className="
-                    mt-6
+                    mt-5
+                    sm:mt-6
                     space-y-4
                     text-sm
                     sm:text-base
-                    leading-7
+                    leading-6
+                    sm:leading-7
                     text-gray-600
                   "
                 >
@@ -442,7 +467,8 @@ const AboutUs = () => {
               px-5
               sm:px-8
               lg:px-10
-              py-20
+              py-16
+              sm:py-20
               lg:py-24
             "
           >
@@ -463,9 +489,10 @@ const AboutUs = () => {
                   tracking-tight
                 "
               >
-                More Than Just
+                More Than Just{" "}
+
                 <span className="text-brand-orange">
-                  {" "}Repairs.
+                  Repairs.
                 </span>
               </h2>
 
@@ -474,7 +501,8 @@ const AboutUs = () => {
                   mt-4
                   text-sm
                   sm:text-base
-                  leading-7
+                  leading-6
+                  sm:leading-7
                   text-gray-600
                 "
               >
@@ -489,12 +517,14 @@ const AboutUs = () => {
 
             <div
               className="
-                mt-12
+                mt-10
+                sm:mt-12
                 grid
-                grid-cols-1
+                grid-cols-2
                 sm:grid-cols-2
                 lg:grid-cols-3
-                gap-5
+                gap-3
+                sm:gap-5
               "
             >
 
@@ -555,7 +585,8 @@ const AboutUs = () => {
               px-5
               sm:px-8
               lg:px-10
-              py-20
+              py-16
+              sm:py-20
               lg:py-24
             "
           >
@@ -577,6 +608,7 @@ const AboutUs = () => {
                 "
               >
                 One Home.
+
                 <br />
 
                 <span className="text-brand-orange">
@@ -589,12 +621,14 @@ const AboutUs = () => {
 
             <div
               className="
-                mt-14
+                mt-10
+                sm:mt-14
                 grid
-                grid-cols-1
+                grid-cols-2
                 sm:grid-cols-2
                 lg:grid-cols-4
-                gap-5
+                gap-3
+                sm:gap-5
               "
             >
 
@@ -642,7 +676,8 @@ const AboutUs = () => {
               px-5
               sm:px-8
               lg:px-10
-              py-20
+              py-16
+              sm:py-20
               lg:py-24
             "
           >
@@ -663,6 +698,7 @@ const AboutUs = () => {
                 "
               >
                 Home Care,
+
                 <span className="text-brand-orange">
                   {" "}Made Simple.
                 </span>
@@ -673,7 +709,8 @@ const AboutUs = () => {
 
             <div
               className="
-                mt-14
+                mt-10
+                sm:mt-14
                 grid
                 grid-cols-1
                 md:grid-cols-3
@@ -719,7 +756,8 @@ const AboutUs = () => {
               mx-auto
               px-5
               sm:px-8
-              py-20
+              py-16
+              sm:py-20
               lg:py-24
               text-center
             "
@@ -728,15 +766,18 @@ const AboutUs = () => {
             <div
               className="
                 mx-auto
-                w-14
-                h-14
+                w-12
+                h-12
+                sm:w-14
+                sm:h-14
                 rounded-2xl
                 bg-brand-orange
                 text-white
                 flex
                 items-center
                 justify-center
-                text-2xl
+                text-xl
+                sm:text-2xl
               "
             >
               ♥
@@ -745,7 +786,8 @@ const AboutUs = () => {
 
             <h2
               className="
-                mt-7
+                mt-6
+                sm:mt-7
                 text-3xl
                 sm:text-4xl
                 lg:text-5xl
@@ -755,23 +797,25 @@ const AboutUs = () => {
               "
             >
               Your Home Deserves
+
               <br />
 
               <span className="text-brand-orange">
                 More Than a Service.
               </span>
-
             </h2>
 
 
             <p
               className="
-                mt-6
+                mt-5
+                sm:mt-6
                 max-w-2xl
                 mx-auto
                 text-sm
                 sm:text-base
-                leading-7
+                leading-6
+                sm:leading-7
                 text-gray-400
               "
             >
@@ -784,7 +828,8 @@ const AboutUs = () => {
 
             <p
               className="
-                mt-6
+                mt-5
+                sm:mt-6
                 text-sm
                 sm:text-base
                 font-bold
@@ -796,10 +841,10 @@ const AboutUs = () => {
 
 
             {/* CTA */}
-
             <div
               className="
-                mt-9
+                mt-8
+                sm:mt-9
                 flex
                 flex-col
                 sm:flex-row
@@ -809,7 +854,7 @@ const AboutUs = () => {
             >
 
               <a
-                href="https://wa.me/919415726896"
+                href="https://wa.me/919415726796"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -827,6 +872,8 @@ const AboutUs = () => {
                   hover:bg-orange-600
                   hover:-translate-y-0.5
                   transition-all
+                  w-full
+                  sm:w-auto
                 "
               >
                 Book a Service
@@ -851,6 +898,8 @@ const AboutUs = () => {
                   font-bold
                   hover:bg-white/10
                   transition-all
+                  w-full
+                  sm:w-auto
                 "
               >
                 Explore Home Care Plans
@@ -863,7 +912,6 @@ const AboutUs = () => {
         </section>
 
       </main>
-
 
       <Footer />
 
@@ -890,13 +938,11 @@ const SectionLabel = ({ children }) => {
         text-brand-orange
       "
     >
-
-      <span className="w-7 h-px bg-brand-orange" />
+      <span className="w-5 sm:w-7 h-px bg-brand-orange" />
 
       {children}
 
-      <span className="w-7 h-px bg-brand-orange" />
-
+      <span className="w-5 sm:w-7 h-px bg-brand-orange" />
     </span>
   );
 };
@@ -918,12 +964,14 @@ const ServiceCard = ({
       className={`
         group
         rounded-2xl
-        p-6
+        p-4
+        sm:p-6
         border
         transition-all
         duration-300
         hover:-translate-y-1
         hover:shadow-xl
+        min-w-0
 
         ${
           featured
@@ -935,13 +983,17 @@ const ServiceCard = ({
 
       <div
         className={`
-          w-12
-          h-12
+          w-10
+          h-10
+          sm:w-12
+          sm:h-12
           rounded-xl
           flex
           items-center
           justify-center
-          text-xl
+          text-lg
+          sm:text-xl
+
           ${
             featured
               ? "bg-brand-orange/20"
@@ -955,10 +1007,13 @@ const ServiceCard = ({
 
       <h3
         className={`
-          mt-5
-          text-base
+          mt-4
+          sm:mt-5
+          text-sm
           sm:text-lg
           font-bold
+          leading-snug
+
           ${
             featured
               ? "text-white"
@@ -973,9 +1028,11 @@ const ServiceCard = ({
       <p
         className={`
           mt-2
-          text-xs
+          text-[11px]
           sm:text-sm
-          leading-6
+          leading-5
+          sm:leading-6
+
           ${
             featured
               ? "text-gray-400"
@@ -1004,7 +1061,8 @@ const WhyCard = ({
   return (
     <div
       className="
-        p-6
+        p-4
+        sm:p-6
         rounded-2xl
         border
         border-gray-100
@@ -1012,19 +1070,23 @@ const WhyCard = ({
         hover:border-orange-100
         hover:shadow-lg
         transition-all
+        min-w-0
       "
     >
 
       <div
         className="
-          w-12
-          h-12
+          w-10
+          h-10
+          sm:w-12
+          sm:h-12
           rounded-xl
           bg-orange-50
           flex
           items-center
           justify-center
-          text-xl
+          text-lg
+          sm:text-xl
         "
       >
         {icon}
@@ -1033,10 +1095,13 @@ const WhyCard = ({
 
       <h3
         className="
-          mt-5
-          text-base
+          mt-4
+          sm:mt-5
+          text-sm
+          sm:text-base
           font-bold
           text-brand-dark
+          leading-snug
         "
       >
         {title}
@@ -1046,9 +1111,10 @@ const WhyCard = ({
       <p
         className="
           mt-2
-          text-xs
+          text-[11px]
           sm:text-sm
-          leading-6
+          leading-5
+          sm:leading-6
           text-gray-500
         "
       >
@@ -1076,8 +1142,10 @@ const StepCard = ({
       <div
         className="
           mx-auto
-          w-16
-          h-16
+          w-14
+          h-14
+          sm:w-16
+          sm:h-16
           rounded-2xl
           bg-white
           border
@@ -1087,7 +1155,8 @@ const StepCard = ({
           items-center
           justify-center
           text-brand-orange
-          text-lg
+          text-base
+          sm:text-lg
           font-black
         "
       >
@@ -1097,11 +1166,13 @@ const StepCard = ({
 
       <h3
         className="
-          mt-6
-          text-base
+          mt-5
+          sm:mt-6
+          text-sm
           sm:text-lg
           font-bold
           text-brand-dark
+          leading-snug
         "
       >
         {title}
@@ -1113,9 +1184,10 @@ const StepCard = ({
           mt-2
           max-w-xs
           mx-auto
-          text-xs
+          text-[11px]
           sm:text-sm
-          leading-6
+          leading-5
+          sm:leading-6
           text-gray-500
         "
       >
