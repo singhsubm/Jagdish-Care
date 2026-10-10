@@ -6,7 +6,6 @@ const plans = [
   {
     name: "JAGDISH CARE ESSENTIAL",
     price: "₹3,999",
-    period: "/ Year",
     description:
       "Essential home maintenance support for everyday household needs.",
     ideal: "Ideal for homes up to 2 BHK",
@@ -22,7 +21,6 @@ const plans = [
   {
     name: "JAGDISH CARE PREMIUM",
     price: "₹7,999",
-    period: "/ Year",
     description:
       "Complete maintenance support with additional appliance and service coverage.",
     ideal: "Ideal for regular home maintenance",
@@ -77,23 +75,8 @@ const HomeCarePlansPage = () => {
 
 
       {/* COMPLETE 360 */}
-      <section className="bg-gray-50 py-16 sm:py-20 lg:py-24">
+      <section className="bg-gray-50 py-0 ">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
-
-          <div className="mb-10 sm:mb-14">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-orange">
-              Complete Protection
-            </p>
-
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-dark">
-              JAGDISH CARE COMPLETE 360°
-            </h2>
-
-            <p className="mt-5 max-w-3xl text-gray-600 text-base sm:text-lg leading-8">
-              A comprehensive annual home care plan covering a wider range of
-              appliances, maintenance services and home care requirements.
-            </p>
-          </div>
 
           {/* Existing Care360Plans component */}
           <Care360Plans />
@@ -175,7 +158,7 @@ const HomeCarePlansPage = () => {
           </p>
 
           <a
-            href="https://wa.me/919415726896"
+            href="https://wa.me/919415726796"
             target="_blank"
             rel="noreferrer"
             className="inline-flex mt-8 items-center justify-center rounded-full bg-brand-orange px-8 py-4 font-bold text-white transition-all hover:scale-[1.02] hover:bg-orange-600"

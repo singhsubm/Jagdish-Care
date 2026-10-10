@@ -41,9 +41,7 @@ const PremiumDetail = () => {
                   ₹7,999
                 </span>
 
-                <span className="text-sm text-gray-500">
-                  / year
-                </span>
+                
               </div>
 
               <p className="text-xs text-gray-500 mt-1">
@@ -258,9 +256,7 @@ const PremiumDetail = () => {
                   ₹7,999
                 </span>
 
-                <span className="text-xs text-gray-500">
-                  / year
-                </span>
+                
               </div>
 
               <div className="mt-5 space-y-2 text-xs text-gray-600">
@@ -273,7 +269,9 @@ const PremiumDetail = () => {
                 <p>✓ 3-Month Warranty</p>
               </div>
 
-              <button className="mt-6 w-full py-3.5 rounded-xl bg-brand-orange text-white font-bold text-sm hover:bg-orange-600 transition">
+              <button onClick={() => {
+                window.location.href = "/contact";
+              }} className="mt-6 w-full py-3.5 rounded-xl bg-brand-orange text-white font-bold text-sm hover:bg-orange-600 transition">
                 Get Premium Plan →
               </button>
 

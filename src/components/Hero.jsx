@@ -315,7 +315,9 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-row gap-4 pt-4">
-              <button className="bg-brand-orange text-white text-[12px] md:text-sm px-6 py-3.5 rounded-full flex items-center justify-center space-x-2 font-bold hover:bg-orange-600 transition-colors shadow-lg shadow-orange-200">
+              <button onClick={() => {
+                window.location.href = "https://wa.me/919415726796";
+              }} className="bg-brand-orange text-white text-[12px] md:text-sm px-6 py-3.5 rounded-full flex items-center justify-center space-x-2 font-bold hover:bg-orange-600 transition-colors shadow-lg shadow-orange-200">
                 <span className="hidden md:block">
                   Book a Service on WhatsApp
                 </span>
@@ -334,7 +336,9 @@ const Hero = () => {
                   ></path>
                 </svg>
               </button>
-              <button className="bg-white text-brand-dark text-[12px] md:text-sm px-10 md:px-6 py-3.5 rounded-full flex items-center justify-center space-x-2 font-bold hover:bg-gray-50 transition-colors shadow-md">
+              <button onClick={() => {
+                window.location.href = "/home-care-plans";
+              }} className="bg-white text-brand-dark text-[12px] md:text-sm px-10 md:px-6 py-3.5 rounded-full flex items-center justify-center space-x-2 font-bold hover:bg-gray-50 transition-colors shadow-md">
                 <span className="hidden md:block">View Home Care Plans</span>
                 <span className="block md:hidden">Plans</span>
                 <svg
@@ -381,7 +385,7 @@ const Hero = () => {
                   Starting from
                 </p>
                 <p className="text-3xl font-extrabold text-brand-orange flex items-center space-x-1">
-                  <span>₹3,999</span>
+                  <span>₹4,999</span>
                   <svg
                     className="w-5 h-5 text-gray-400"
                     fill="none"

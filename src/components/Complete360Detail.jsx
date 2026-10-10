@@ -41,9 +41,7 @@ const Complete360Detail = () => {
                   ₹11,999
                 </span>
 
-                <span className="text-sm text-gray-500">
-                  / year
-                </span>
+                
               </div>
 
               <p className="text-xs text-gray-500 mt-1">
@@ -232,6 +230,28 @@ const Complete360Detail = () => {
                   "Major woodwork/material extra",
                 ]}
               />
+              <Service
+                icon="☀️"
+                title="Complete Solar Cleaning"
+                quantity="Complete Solar Cleaning"
+                points={[
+                  "Solar panel cleaning",
+                  "Inverter inspection",
+                  "Cable and connection check",
+                  "System performance evaluation",
+                ]}
+              />
+              <Service
+                icon="💧"
+                title="Complete Water Tank Cleaning"
+                quantity="Complete Water Tank Cleaning"
+                points={[
+                  "Water tank cleaning",
+                  "Pipe and outlet inspection",
+                  "Sediment removal",
+                  "Disinfection and sanitization",
+                ]}
+              />
 
             </div>
 
@@ -335,9 +355,7 @@ const Complete360Detail = () => {
                   ₹11,999
                 </span>
 
-                <span className="text-xs text-gray-500">
-                  / year
-                </span>
+                
               </div>
 
               <div className="mt-5 space-y-2 text-xs text-gray-600">
@@ -347,11 +365,17 @@ const Complete360Detail = () => {
                 <p>✓ Deep Home Cleaning</p>
                 <p>✓ Pest Control</p>
                 <p>✓ Plumbing + Electrical</p>
-                <p>✓ 6-Month Warranty</p>
+                <p>✓ Carpentry</p>
+                <p>✓ Chimney & Exhaust Cleaning</p>
+                <p>✓ Washing Machine Cleaning</p>
+                <p>✓ Refrigerator Servicing</p>
                 <p>✓ Last-Month AC Refresh</p>
+                <p>✓ 6-Month Warranty</p>
               </div>
 
-              <button className="mt-6 w-full py-3.5 rounded-xl bg-brand-orange text-white font-bold text-sm hover:bg-orange-600 transition">
+              <button onClick={() => {
+                window.location.href = "/contact";
+              }} className="mt-6 w-full py-3.5 rounded-xl bg-brand-orange text-white font-bold text-sm hover:bg-orange-600 transition">
                 Get Complete 360° Care →
               </button>
 

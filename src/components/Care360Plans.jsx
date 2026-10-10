@@ -113,6 +113,17 @@ const ServiceIcon = ({ type }) => {
         <path d="M6 11h12M9 7v2M9 14v2" strokeLinecap="round" />
       </>
     ),
+    solar: (
+      <>
+        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+      </>
+    ),
+    "water tank": (
+      <>
+        <rect x="6" y="3" width="12" height="18" rx="2" />
+        <path d="M6 11h12M9 7v2M9 14v2" strokeLinecap="round" />
+      </>
+    ),
 
     home: (
       <>
@@ -455,12 +466,10 @@ const Care360Plans = () => {
               <div>
 
                 <span className="text-3xl lg:text-5xl font-black text-brand-dark">
-                  ₹3,999
+                  ₹4,999
                 </span>
 
-                <span className="text-xs lg:text-sm text-gray-500">
-                  {' '} / year
-                </span>
+                
 
               </div>
 
@@ -671,9 +680,7 @@ const Care360Plans = () => {
                   ₹7,999
                 </span>
 
-                <span className="text-xs lg:text-sm text-gray-500">
-                  {' '} / year
-                </span>
+                
 
               </div>
 
@@ -901,9 +908,7 @@ const Care360Plans = () => {
                   ₹11,999
                 </span>
 
-                <span className="text-xs lg:text-sm text-gray-500">
-                  {' '} / year
-                </span>
+                
 
               </div>
 
@@ -994,6 +999,14 @@ const Care360Plans = () => {
 
                   <Feature icon="plumbing">
                     Complete Plumbing & Carpentry
+                  </Feature>
+                  
+                  <Feature icon="solar">
+                    Complete Solar Cleaning
+                  </Feature>
+                  
+                  <Feature icon="water tank">
+                    Complete Water Tank Cleaning
                   </Feature>
 
                   <Feature icon="ac">

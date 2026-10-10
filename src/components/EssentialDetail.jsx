@@ -40,9 +40,7 @@ const EssentialDetail = () => {
                     ₹3,999
                   </span>
 
-                  <span className="text-sm text-gray-500">
-                    / year
-                  </span>
+                  
                 </div>
 
                 <p className="text-xs text-gray-500 mt-1">
@@ -216,16 +214,35 @@ const EssentialDetail = () => {
                   ₹3,999
                 </span>
 
-                <span className="text-xs text-gray-500">
-                  / year
-                </span>
+                
               </div>
 
-              <p className="mt-2 text-xs text-gray-500">
-                For homes up to 2 BHK
+              <p>
+                <span className="text-xs text-gray-500">
+                  1 AC Service
+                </span>
+              </p>
+              <p>
+                <span className="text-xs text-gray-500">
+                  1 RO Service
+                </span>
+              </p>
+              <p>
+                <span className="text-xs text-gray-500">
+                  Electrical Maintenance
+                </span>
+              </p>
+              <p>
+                <span className="text-xs text-gray-500">
+                  Carpenter Maintenance
+                </span>
               </p>
 
+
               <button
+                onClick={() => {
+                  window.location.href = "/contact";
+                }}
                 className="mt-6 w-full py-3.5 rounded-xl bg-brand-orange text-white font-bold text-sm hover:bg-orange-600 transition"
               >
                 Get Essential Plan →

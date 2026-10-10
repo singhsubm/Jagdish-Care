@@ -158,7 +158,7 @@ const BookYourService = () => {
             {/* WhatsApp */}
 
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919415726796"
               target="_blank"
               rel="noreferrer"
               className="
@@ -242,7 +242,7 @@ const BookYourService = () => {
             {/* Call */}
 
             <a
-              href="tel:+91XXXXXXXXXX"
+              href="tel:+919415726796"
               className="
                 inline-flex
                 items-center
